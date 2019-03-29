@@ -1,0 +1,27 @@
+{
+  "name": "klint",
+  "version": "0.1.0",
+  "description": "YAML thingy",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^4.16.6",
+    "@types/json-schema": "^7.0.3",
+    "@types/chalk": "^2.2.0",
+    "@types/strip-ansi": "^3.0.0",
+    "@types/text-table": "^0.2.0"
+  },
+  "dependencies": {
+    "eslint": "^5.15.3",
+    "chalk": "^2.4.2",
+    "strip-ansi": "^5.2.0",
+    "text-table": "^0.2.0"
+  }
+}

@@ -1,0 +1,1001 @@
+- token: ''
+  tokenCode: O
+  description: Begins document
+  byteOffset: 0
+  charOffset: 0
+  line: 1
+  character: 0
+- token: '---'
+  tokenCode: K
+  description: Directives end marker
+  byteOffset: 0
+  charOffset: 0
+  line: 1
+  character: 0
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 3
+  charOffset: 3
+  line: 1
+  character: 3
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 3
+  charOffset: 3
+  line: 1
+  character: 3
+- token: ''
+  tokenCode: M
+  description: Begins mapping content
+  byteOffset: 4
+  charOffset: 4
+  line: 2
+  character: 0
+- token: ''
+  tokenCode: X
+  description: 'Begins mapping key:value pair'
+  byteOffset: 4
+  charOffset: 4
+  line: 2
+  character: 0
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 4
+  charOffset: 4
+  line: 2
+  character: 0
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 4
+  charOffset: 4
+  line: 2
+  character: 0
+- token: a
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 4
+  charOffset: 4
+  line: 2
+  character: 0
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 5
+  charOffset: 5
+  line: 2
+  character: 1
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 5
+  charOffset: 5
+  line: 2
+  character: 1
+- token: ':'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 5
+  charOffset: 5
+  line: 2
+  character: 1
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 6
+  charOffset: 6
+  line: 2
+  character: 2
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 7
+  charOffset: 7
+  line: 2
+  character: 3
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 7
+  charOffset: 7
+  line: 2
+  character: 3
+- token: b
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 7
+  charOffset: 7
+  line: 2
+  character: 3
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 8
+  charOffset: 8
+  line: 2
+  character: 4
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 8
+  charOffset: 8
+  line: 2
+  character: 4
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 8
+  charOffset: 8
+  line: 2
+  character: 4
+- token: ''
+  tokenCode: x
+  description: 'Ends mapping key:value pair'
+  byteOffset: 9
+  charOffset: 9
+  line: 3
+  character: 0
+- token: ''
+  tokenCode: X
+  description: 'Begins mapping key:value pair'
+  byteOffset: 9
+  charOffset: 9
+  line: 3
+  character: 0
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 9
+  charOffset: 9
+  line: 3
+  character: 0
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 9
+  charOffset: 9
+  line: 3
+  character: 0
+- token: c
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 9
+  charOffset: 9
+  line: 3
+  character: 0
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 10
+  charOffset: 10
+  line: 3
+  character: 1
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 10
+  charOffset: 10
+  line: 3
+  character: 1
+- token: ':'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 10
+  charOffset: 10
+  line: 3
+  character: 1
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 11
+  charOffset: 11
+  line: 3
+  character: 2
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 12
+  charOffset: 12
+  line: 3
+  character: 3
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 12
+  charOffset: 12
+  line: 3
+  character: 3
+- token: d
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 12
+  charOffset: 12
+  line: 3
+  character: 3
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 13
+  charOffset: 13
+  line: 3
+  character: 4
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 13
+  charOffset: 13
+  line: 3
+  character: 4
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 13
+  charOffset: 13
+  line: 3
+  character: 4
+- token: ''
+  tokenCode: x
+  description: 'Ends mapping key:value pair'
+  byteOffset: 14
+  charOffset: 14
+  line: 4
+  character: 0
+- token: ''
+  tokenCode: m
+  description: Ends mapping content
+  byteOffset: 14
+  charOffset: 14
+  line: 4
+  character: 0
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 14
+  charOffset: 14
+  line: 4
+  character: 0
+- token: ''
+  tokenCode: o
+  description: Ends document
+  byteOffset: 14
+  charOffset: 14
+  line: 4
+  character: 0
+- token: ...
+  tokenCode: k
+  description: Document end marker
+  byteOffset: 14
+  charOffset: 14
+  line: 4
+  character: 0
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 17
+  charOffset: 17
+  line: 4
+  character: 3
+- token: ''
+  tokenCode: O
+  description: Begins document
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: ''
+  tokenCode: M
+  description: Begins mapping content
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: ''
+  tokenCode: X
+  description: 'Begins mapping key:value pair'
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: '1'
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 18
+  charOffset: 18
+  line: 5
+  character: 0
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 19
+  charOffset: 19
+  line: 5
+  character: 1
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 19
+  charOffset: 19
+  line: 5
+  character: 1
+- token: ':'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 19
+  charOffset: 19
+  line: 5
+  character: 1
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 20
+  charOffset: 20
+  line: 5
+  character: 2
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 20
+  charOffset: 20
+  line: 5
+  character: 2
+- token: ''
+  tokenCode: Q
+  description: Begins sequence content
+  byteOffset: 21
+  charOffset: 21
+  line: 6
+  character: 0
+- token: ' '
+  tokenCode: i
+  description: Contains indentation spaces
+  byteOffset: 21
+  charOffset: 21
+  line: 6
+  character: 0
+- token: '-'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 22
+  charOffset: 22
+  line: 6
+  character: 1
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 23
+  charOffset: 23
+  line: 6
+  character: 2
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 24
+  charOffset: 24
+  line: 6
+  character: 3
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 24
+  charOffset: 24
+  line: 6
+  character: 3
+- token: abcd
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 24
+  charOffset: 24
+  line: 6
+  character: 3
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 28
+  charOffset: 28
+  line: 6
+  character: 7
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 28
+  charOffset: 28
+  line: 6
+  character: 7
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 28
+  charOffset: 28
+  line: 6
+  character: 7
+- token: ' '
+  tokenCode: i
+  description: Contains indentation spaces
+  byteOffset: 29
+  charOffset: 29
+  line: 7
+  character: 0
+- token: '-'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 30
+  charOffset: 30
+  line: 7
+  character: 1
+- token: ' '
+  tokenCode: i
+  description: Contains indentation spaces
+  byteOffset: 31
+  charOffset: 31
+  line: 7
+  character: 2
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 32
+  charOffset: 32
+  line: 7
+  character: 3
+- token: ''
+  tokenCode: M
+  description: Begins mapping content
+  byteOffset: 32
+  charOffset: 32
+  line: 7
+  character: 3
+- token: ''
+  tokenCode: X
+  description: 'Begins mapping key:value pair'
+  byteOffset: 32
+  charOffset: 32
+  line: 7
+  character: 3
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 32
+  charOffset: 32
+  line: 7
+  character: 3
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 32
+  charOffset: 32
+  line: 7
+  character: 3
+- token: e
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 32
+  charOffset: 32
+  line: 7
+  character: 3
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 33
+  charOffset: 33
+  line: 7
+  character: 4
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 33
+  charOffset: 33
+  line: 7
+  character: 4
+- token: ':'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 33
+  charOffset: 33
+  line: 7
+  character: 4
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 34
+  charOffset: 34
+  line: 7
+  character: 5
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 34
+  charOffset: 34
+  line: 7
+  character: 5
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 34
+  charOffset: 34
+  line: 7
+  character: 5
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 34
+  charOffset: 34
+  line: 7
+  character: 5
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 34
+  charOffset: 34
+  line: 7
+  character: 5
+- token: ''
+  tokenCode: x
+  description: 'Ends mapping key:value pair'
+  byteOffset: 35
+  charOffset: 35
+  line: 8
+  character: 0
+- token: '   '
+  tokenCode: i
+  description: Contains indentation spaces
+  byteOffset: 35
+  charOffset: 35
+  line: 8
+  character: 0
+- token: ''
+  tokenCode: X
+  description: 'Begins mapping key:value pair'
+  byteOffset: 38
+  charOffset: 38
+  line: 8
+  character: 3
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 38
+  charOffset: 38
+  line: 8
+  character: 3
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 38
+  charOffset: 38
+  line: 8
+  character: 3
+- token: f
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 38
+  charOffset: 38
+  line: 8
+  character: 3
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 39
+  charOffset: 39
+  line: 8
+  character: 4
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 39
+  charOffset: 39
+  line: 8
+  character: 4
+- token: ':'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 39
+  charOffset: 39
+  line: 8
+  character: 4
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 40
+  charOffset: 40
+  line: 8
+  character: 5
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 41
+  charOffset: 41
+  line: 8
+  character: 6
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 41
+  charOffset: 41
+  line: 8
+  character: 6
+- token: g
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 41
+  charOffset: 41
+  line: 8
+  character: 6
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 42
+  charOffset: 42
+  line: 8
+  character: 7
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 42
+  charOffset: 42
+  line: 8
+  character: 7
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 42
+  charOffset: 42
+  line: 8
+  character: 7
+- token: ''
+  tokenCode: x
+  description: 'Ends mapping key:value pair'
+  byteOffset: 43
+  charOffset: 43
+  line: 9
+  character: 0
+- token: '   '
+  tokenCode: i
+  description: Contains indentation spaces
+  byteOffset: 43
+  charOffset: 43
+  line: 9
+  character: 0
+- token: ''
+  tokenCode: X
+  description: 'Begins mapping key:value pair'
+  byteOffset: 46
+  charOffset: 46
+  line: 9
+  character: 3
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 46
+  charOffset: 46
+  line: 9
+  character: 3
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 46
+  charOffset: 46
+  line: 9
+  character: 3
+- token: hij
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 46
+  charOffset: 46
+  line: 9
+  character: 3
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 49
+  charOffset: 49
+  line: 9
+  character: 6
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 49
+  charOffset: 49
+  line: 9
+  character: 6
+- token: ':'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 49
+  charOffset: 49
+  line: 9
+  character: 6
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 50
+  charOffset: 50
+  line: 9
+  character: 7
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 51
+  charOffset: 51
+  line: 9
+  character: 8
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 51
+  charOffset: 51
+  line: 9
+  character: 8
+- token: klm
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 51
+  charOffset: 51
+  line: 9
+  character: 8
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 54
+  charOffset: 54
+  line: 9
+  character: 11
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 54
+  charOffset: 54
+  line: 9
+  character: 11
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 54
+  charOffset: 54
+  line: 9
+  character: 11
+- token: ''
+  tokenCode: x
+  description: 'Ends mapping key:value pair'
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: m
+  description: Ends mapping content
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: q
+  description: Ends sequence content
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: x
+  description: 'Ends mapping key:value pair'
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: m
+  description: Ends mapping content
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: o
+  description: Ends document
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: O
+  description: Begins document
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: '---'
+  tokenCode: K
+  description: Directives end marker
+  byteOffset: 55
+  charOffset: 55
+  line: 10
+  character: 0
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 58
+  charOffset: 58
+  line: 10
+  character: 3
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 58
+  charOffset: 58
+  line: 10
+  character: 3
+- token: ''
+  tokenCode: Q
+  description: Begins sequence content
+  byteOffset: 59
+  charOffset: 59
+  line: 11
+  character: 0
+- token: '-'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 59
+  charOffset: 59
+  line: 11
+  character: 0
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 60
+  charOffset: 60
+  line: 11
+  character: 1
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 61
+  charOffset: 61
+  line: 11
+  character: 2
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 61
+  charOffset: 61
+  line: 11
+  character: 2
+- token: 'n'
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 61
+  charOffset: 61
+  line: 11
+  character: 2
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 62
+  charOffset: 62
+  line: 11
+  character: 3
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 62
+  charOffset: 62
+  line: 11
+  character: 3
+- token: \x0a
+  tokenCode: b
+  description: Contains separation line break
+  byteOffset: 62
+  charOffset: 62
+  line: 11
+  character: 3
+- token: '-'
+  tokenCode: I
+  description: Contains character indicating structure
+  byteOffset: 63
+  charOffset: 63
+  line: 12
+  character: 0
+- token: ' '
+  tokenCode: w
+  description: Contains separation white space
+  byteOffset: 64
+  charOffset: 64
+  line: 12
+  character: 1
+- token: ''
+  tokenCode: 'N'
+  description: Begins complete node
+  byteOffset: 65
+  charOffset: 65
+  line: 12
+  character: 2
+- token: ''
+  tokenCode: S
+  description: Begins scalar content
+  byteOffset: 65
+  charOffset: 65
+  line: 12
+  character: 2
+- token: opz
+  tokenCode: T
+  description: Contains preserved content text characters
+  byteOffset: 65
+  charOffset: 65
+  line: 12
+  character: 2
+- token: ''
+  tokenCode: s
+  description: Ends scalar content
+  byteOffset: 68
+  charOffset: 68
+  line: 12
+  character: 5
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 68
+  charOffset: 68
+  line: 12
+  character: 5
+- token: ''
+  tokenCode: q
+  description: Ends sequence content
+  byteOffset: 68
+  charOffset: 68
+  line: 12
+  character: 5
+- token: ''
+  tokenCode: 'n'
+  description: Ends complete node
+  byteOffset: 68
+  charOffset: 68
+  line: 12
+  character: 5
+- token: ''
+  tokenCode: o
+  description: Ends document
+  byteOffset: 68
+  charOffset: 68
+  line: 12
+  character: 5

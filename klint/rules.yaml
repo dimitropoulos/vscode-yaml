@@ -1,0 +1,31 @@
+possible errors:
+- namespace-scoped-resources-require-namespace
+- cluster-scoped-resources-have-no-namespace
+- no-type-coerced-booleans
+- role-binding-subject-fields:
+  User: [kind, name, apiGroup]
+  Group: [kind, name, apiGroup]
+  ServiceAccount: [kind, name, namespace]
+- deprecated-resource-apiversion
+- unsupported-resource-apiversion
+- selector-label-length
+
+best practices:
+- starting-document-with-three-dashes
+- ending-document-with-three-periods
+- final-newline
+- allowed-resources
+- restricted-resources
+- single-resource-per-file
+- resource-name-matches-file-name
+- file-name-resource-suffix
+
+stylictic issues:
+- array-indentation
+- indentation-level
+
+Custom Resources:
+  name: the name of the resource
+  shortname: the singular short name of the resource
+  namespaced: true/false if resource is namespaced
+  kind: the name the resource manifests use

@@ -1,0 +1,3 @@
+- icon
+- jsonschema for config file
+- extract eslint formatters into own package and convert to typescript

@@ -1,2 +1,5 @@
-node_modules/
-out/
+out
+node_modules
+npm-debug.log
+*.vsix
+yarn-error.log

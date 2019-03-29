@@ -5,11 +5,12 @@
 		"moduleResolution": "node",
 		"outDir": "out",
 		"lib": [ "es2016" ],
-		"sourceMap": true
+		"sourceMap": true,
+		"strict": true,
 	},
 	"exclude": [
 		"node_modules",
-		"server"
+		"server",
 	],
 	"include": [
 		"src",

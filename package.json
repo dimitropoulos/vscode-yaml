@@ -1,22 +1,24 @@
 {
-  "name": "vscode-yaml",
+  "name": "vscode-yaml-ast",
   "displayName": "YAML",
-  "description": "YAML Language Support by Red Hat, with built-in Kubernetes and Kedge syntax support",
-  "author": "Red Hat",
+  "description": "YAML Language Support by Dimitri Mitropoulos, with built-in Kubernetes and Kedge syntax support",
+  "author": "Dimitri Mitropoulos",
   "contributors": [
     {
-      "name": "Joshua Pinkney",
-      "email": "jpinkney@redhat.com"
+      "name": "Dimitri Mitropoulos",
+      "email": "dimitrimitropoulos@gmail.com"
     }
   ],
   "license": "MIT",
-  "version": "0.3.0",
-  "publisher": "redhat",
+  "version": "0.1.0",
+  "publisher": "weaveworks",
   "preview": true,
-  "bugs": "https://github.com/redhat-developer/vscode-yaml/issues",
+  "bugs": {
+    "url": "https://github.com/dimitropoulos/vscode-yaml/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/redhat-developer/vscode-yaml"
+    "url": "https://github.com/dimitropoulos/vscode-yaml"
   },
   "icon": "icon/icon128.png",
   "engines": {
@@ -29,7 +31,8 @@
     "Formatters"
   ],
   "activationEvents": [
-    "onLanguage:yaml"
+    "onLanguage:yaml",
+    "*"
   ],
   "keywords": [
     "kubernetes",
@@ -56,6 +59,12 @@
         "filenames": [],
         "firstLine": "^#cloud-config",
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "ignore",
+        "filenames": [
+          ".klintignore"
+        ]
       }
     ],
     "grammars": [
@@ -66,8 +75,207 @@
       }
     ],
     "configuration": {
+      "type": "Object",
+      "title": "Klint",
       "properties": {
-        "yaml.trace.server": {
+        "klint.enable": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": true,
+          "description": "Controls whether klint is enabled for YAML files or not."
+        },
+        "klint.packageManager": {
+          "scope": "resource",
+          "type": "string",
+          "enum": [
+            "npm",
+            "yarn",
+            "pnpm"
+          ],
+          "default": "yarn",
+          "description": "The package manager you use to install node modules"
+        },
+        "klint.alwaysShowStatus": {
+          "type": "boolean",
+          "default": false,
+          "description": "Always show the Klint status bar item.",
+          "scope": "window"
+        },
+        "klint.nodePath": {
+          "scope": "resource",
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "A path added to NODE_PATH when resolveing the kling module."
+        },
+        "klint.options": {
+          "scope": "resource",
+          "type": "object",
+          "default": {},
+          "description": "The klint options object exists to provide args normally passed to klint when executed from a command line."
+        },
+        "klint.trace.server": {
+          "scope": "window",
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "off",
+                "messages",
+                "verbose"
+              ],
+              "default": "off"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "verbosity": {
+                  "type": "string",
+                  "enum": [
+                    "off",
+                    "messages",
+                    "verbose"
+                  ],
+                  "default": "off"
+                },
+                "format": {
+                  "type": "string",
+                  "enum": [
+                    "text",
+                    "json"
+                  ],
+                  "default": "text"
+                }
+              }
+            }
+          ],
+          "default": "off",
+          "description": "Traces the communication between VSCode and the klint linter service"
+        },
+        "klint.run": {
+          "scope": "resource",
+          "type": "string",
+          "enum": [
+            "onSave",
+            "onType"
+          ],
+          "default": "onType",
+          "description": "Run the linter on save (`onSave`) or on type (`onType`)"
+        },
+        "klint.autoFixOnSave": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": false,
+          "description": "Configures the extension to auto fix the file when it is saved."
+        },
+        "klint.workingDirectories": {
+          "scope": "resource",
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "directory": {
+                    "type": "string",
+                    "description": "The working directory to use if a file's path starts with this directory"
+                  },
+                  "changeProcessCWD": {
+                    "type": "boolean",
+                    "description": "Whether the process's cwd should be changed as well."
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "klint.validate": {
+          "scope": "resource",
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "language": {
+                    "type": "string",
+                    "description": "The language id to be validated by Klint"
+                  },
+                  "autoFix": {
+                    "type": "boolean",
+                    "description": "Whether auto fixes are provided for the language"
+                  }
+                }
+              }
+            ]
+          },
+          "default": [
+            "yaml"
+          ],
+          "description": "An array of language ids which should be validated by Klint"
+        },
+        "klint.provideLintTask": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": false,
+          "description": "Controls whether a task for linting the whole workspace will be available"
+        },
+        "klint.runtime": {
+          "scope": "window",
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "The location of the node binary to run Klint under"
+        },
+        "klint.codeAction.disableRuleComment": {
+          "scope": "resource",
+          "type": "object",
+          "default": {
+            "enable": true,
+            "location": "newLine"
+          },
+          "properties": {
+            "enable": {
+              "type": "boolean",
+              "default": true,
+              "description": "Show the disable code actions."
+            },
+            "location": {
+              "type": "string",
+              "enum": [
+                "newLine",
+                "sameLine"
+              ],
+              "default": "newLine",
+              "description": "Configure the `disable rule` code action to insert the comment on the same line or a new line"
+            }
+          }
+        },
+        "klint.codeAction.showDocumentation": {
+          "scope": "resource",
+          "type": "object",
+          "default": {
+            "enable": true
+          },
+          "properties": {
+            "enable": {
+              "type": "boolean",
+              "default": true,
+              "description": "Show the documentation code actions"
+            }
+          }
+        },
+        "klint.todo.yaml.trace.server": {
           "type": "string",
           "enum": [
             "off",
@@ -77,27 +285,27 @@
           "default": "off",
           "description": "Traces the communication between VSCode and the YAML language service."
         },
-        "yaml.schemas": {
+        "klint.todo.yaml.schemas": {
           "type": "object",
           "default": {},
           "description": "Associate schemas to Yaml files in the current workspace"
         },
-        "yaml.format.enable": {
+        "klint.todo.yaml.format.enable": {
           "type": "boolean",
           "default": false,
           "description": "Enable/disable default YAML formatter (requires restart)"
         },
-        "yaml.format.singleQuote": {
+        "klint.todo.yaml.format.singleQuote": {
           "type": "boolean",
           "default": false,
           "description": "Use single quotes instead of double quotes"
         },
-        "yaml.format.bracketSpacing": {
+        "klint.todo.yaml.format.bracketSpacing": {
           "type": "boolean",
           "default": true,
           "description": "Print spaces between brackets in objects"
         },
-        "yaml.format.proseWrap": {
+        "klint.todo.yaml.format.proseWrap": {
           "type": "string",
           "default": "preserve",
           "enum": [
@@ -107,38 +315,71 @@
           ],
           "description": "Always: wrap prose if it exeeds the print width, Never: never wrap the prose, Preserve: wrap prose as-is"
         },
-        "yaml.format.printWidth": {
+        "klint.todo.yaml.format.printWidth": {
           "type": "integer",
           "default": 80,
           "description": "Specify the line length that the printer will wrap on"
         },
-        "yaml.validate": {
+        "klint.todo.yaml.validate": {
           "type": "boolean",
           "default": true,
           "description": "Enable/disable validation feature"
         },
-        "yaml.hover": {
+        "klint.todo.yaml.hover": {
           "type": "boolean",
           "default": true,
           "description": "Enable/disable hover feature"
         },
-        "yaml.completion": {
+        "klint.todo.yaml.completion": {
           "type": "boolean",
           "default": true,
           "description": "Enable/disable completion feature"
         },
-        "yaml.customTags": {
+        "klint.todo.yaml.customTags": {
           "type": "array",
           "default": [],
           "description": "Custom tags for the parser to use"
         },
-        "yaml.schemaStore.enable": {
+        "klint.todo.yaml.schemaStore.enable": {
           "type": "boolean",
           "default": true,
           "description": "Automatically pull available YAML schemas from JSON Schema Store"
         }
       }
     },
+    "commands": [
+      {
+        "title": "Fix all auto-fixable Problems",
+        "category": "Klint",
+        "command": "klint.executeAutofix"
+      },
+      {
+        "title": "Create Klint configuration",
+        "category": "Klint",
+        "command": "klint.createConfig"
+      },
+      {
+        "title": "Enable Klint",
+        "category": "Klint",
+        "command": "klint.enable"
+      },
+      {
+        "title": "Disable Klint",
+        "category": "Klint",
+        "command": "klint.disable"
+      },
+      {
+        "title": "Show Output Channel",
+        "category": "Klint",
+        "command": "klint.showOutputChannel"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": ".klintrc.yaml",
+        "url": "http://json.schemastore.org/klintrc"
+      }
+    ],
     "configurationDefaults": {
       "[yaml]": {
         "editor.insertSpaces": true,
@@ -153,23 +394,44 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "update-vscode": "node ./node_modules/vscode/bin/install",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "mocha --ui tdd out/test/extension.test.js"
+    "test": "mocha --ui tdd out/test/extension.test.js",
+    "vscode:prepublish": "cd client && yarn run update-vscode && cd .. && yarn run webpack",
+    "webpack": "yarn run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
+    "compile": "tsc --project ./",
+    "complie:client": "tsc --build ./client/tsconfig.json",
+    "compile:server": "tsc --build ./server/tsconfig.json",
+    "watch": "tsc --watch --project ./",
+    "clean": "rimraf client/out && rimraf server/out",
+    "postinstall": "cd client && yarn && cd ../server && yarn && cd .."
   },
   "devDependencies": {
+    "@types/js-yaml": "^3.12.0",
     "@types/mocha": "^2.2.33",
-    "@types/node": "^6.0.52",
+    "@types/node": "^10.14.0",
+    "@types/ramda": "^0.26.5",
+    "js-yaml": "^3.13.0",
+    "merge-options": "^1.0.1",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^5.3.3",
     "ts-node": "^3.3.0",
-    "typescript": "3.0.0-dev.20180626",
-    "vscode": "^1.1.29"
+    "typescript": "^3.0.0",
+    "vscode": "^1.1.29",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
+    "directory-tree": "^2.2.1",
+    "ramda": "^0.26.1",
+    "ramda-adjunct": "^2.16.1",
     "vscode-languageclient": "3.5.1",
     "vscode-nls": "^3.2.1",
     "vscode-uri": "^1.0.5",
+
+    "eslint": "^5.15.3",
+    "chalk": "^2.4.2",
+    "strip-ansi": "^5.2.0",
+    "text-table": "^0.2.0",
+
     "yaml-language-server": "0.3.2"
   }
 }

@@ -1,0 +1,340 @@
+[
+  {
+    "Document": [
+      {
+        "Directives end marker": "---"
+      },
+      {
+        "Node": [
+          {
+            "Non-content line break": "\\x0a"
+          },
+          {
+            "Mapping": [
+              {
+                "Key:value Pair": [
+                  {
+                    "Node": [
+                      {
+                        "Scalar": [
+                          {
+                            "Content text": "a"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Indicator character": ":"
+                  },
+                  {
+                    "Non-content white space": " "
+                  },
+                  {
+                    "Node": [
+                      {
+                        "Scalar": [
+                          {
+                            "Content text": "b"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Non-content line break": "\\x0a"
+                  }
+                ]
+              },
+              {
+                "Key:value Pair": [
+                  {
+                    "Node": [
+                      {
+                        "Scalar": [
+                          {
+                            "Content text": "c"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Indicator character": ":"
+                  },
+                  {
+                    "Non-content white space": " "
+                  },
+                  {
+                    "Node": [
+                      {
+                        "Scalar": [
+                          {
+                            "Content text": "d"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Non-content line break": "\\x0a"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Document end marker": "..."
+  },
+  {
+    "Non-content line break": "\\x0a"
+  },
+  {
+    "Document": [
+      {
+        "Node": [
+          {
+            "Mapping": [
+              {
+                "Key:value Pair": [
+                  {
+                    "Node": [
+                      {
+                        "Scalar": [
+                          {
+                            "Content text": "1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Indicator character": ":"
+                  },
+                  {
+                    "Node": [
+                      {
+                        "Non-content line break": "\\x0a"
+                      },
+                      {
+                        "Sequence content": [
+                          {
+                            "Indentation white space": " "
+                          },
+                          {
+                            "Indicator character": "-"
+                          },
+                          {
+                            "Non-content white space": " "
+                          },
+                          {
+                            "Node": [
+                              {
+                                "Scalar": [
+                                  {
+                                    "Content text": "abcd"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Non-content line break": "\\x0a"
+                          },
+                          {
+                            "Indentation white space": " "
+                          },
+                          {
+                            "Indicator character": "-"
+                          },
+                          {
+                            "Indentation white space": " "
+                          },
+                          {
+                            "Node": [
+                              {
+                                "Mapping": [
+                                  {
+                                    "Key:value Pair": [
+                                      {
+                                        "Node": [
+                                          {
+                                            "Scalar": [
+                                              {
+                                                "Content text": "e"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "Indicator character": ":"
+                                      },
+                                      {
+                                        "Node": [
+                                          {
+                                            "Scalar": [
+                                              {
+                                                "Empty": ""
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "Non-content line break": "\\x0a"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "Indentation white space": "   "
+                                  },
+                                  {
+                                    "Key:value Pair": [
+                                      {
+                                        "Node": [
+                                          {
+                                            "Scalar": [
+                                              {
+                                                "Content text": "f"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "Indicator character": ":"
+                                      },
+                                      {
+                                        "Non-content white space": " "
+                                      },
+                                      {
+                                        "Node": [
+                                          {
+                                            "Scalar": [
+                                              {
+                                                "Content text": "g"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "Non-content line break": "\\x0a"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "Indentation white space": "   "
+                                  },
+                                  {
+                                    "Key:value Pair": [
+                                      {
+                                        "Node": [
+                                          {
+                                            "Scalar": [
+                                              {
+                                                "Content text": "hij"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "Indicator character": ":"
+                                      },
+                                      {
+                                        "Non-content white space": " "
+                                      },
+                                      {
+                                        "Node": [
+                                          {
+                                            "Scalar": [
+                                              {
+                                                "Content text": "klm"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "Non-content line break": "\\x0a"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Document": [
+      {
+        "Directives end marker": "---"
+      },
+      {
+        "Node": [
+          {
+            "Non-content line break": "\\x0a"
+          },
+          {
+            "Sequence content": [
+              {
+                "Indicator character": "-"
+              },
+              {
+                "Non-content white space": " "
+              },
+              {
+                "Node": [
+                  {
+                    "Scalar": [
+                      {
+                        "Content text": "n"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Non-content line break": "\\x0a"
+              },
+              {
+                "Indicator character": "-"
+              },
+              {
+                "Non-content white space": " "
+              },
+              {
+                "Node": [
+                  {
+                    "Scalar": [
+                      {
+                        "Content text": "opz"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
